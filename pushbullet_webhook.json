@@ -1,0 +1,15 @@
+{
+  "eventName": "pushbullet",
+  "url": "https://api.pushbullet.com/v2/pushes",
+  "requestType": "POST",
+  "headers": {
+    "Authorization": "Bearer <your-pushbullet-authorization-token-here>",
+    "Content-Type": "application/json"
+  },
+  "json": {
+      "type": "note",
+      "title": "{{SPARK_EVENT_VALUE}}",
+      "body": ""
+  },
+  "mydevices": true
+}
